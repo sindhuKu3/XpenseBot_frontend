@@ -1,0 +1,64 @@
+ .Form{
+    margin-block: 10px;
+
+
+}
+.Form h1{
+    text-align:center;
+}
+.IncomeForm form{
+  height:500px;
+}
+.Form .Income form{
+  height:479px ;
+}
+.Form input{
+width: 264px;
+margin-left:5px ;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  border: black solid 1px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  padding-left: 10px;
+}
+.Form textarea{
+    width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  border: none;
+  border: black solid 1px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  padding-left: 12px;
+}
+
+.Income h1{
+ color:rgb(28, 28, 161);
+    font-weight: bolder;
+}
+.Expense h1{
+    color:grey ;
+    font-weight: bolder; 
+}
+.IncomeSubmit button{
+ width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #1010a5;
+  margin-left: 83px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+.ExpenseSubmit button{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #6a6a70;
+  margin-left: 83px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}

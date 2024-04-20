@@ -1,0 +1,12 @@
+export const DashBoard = <i class="fa-solid fa-chart-line"></i>;
+export const Money = <i class="fa-solid fa-money-bill"></i>;
+export const Transaction = <i class="fa-solid fa-money-bill-trend-up"></i>;
+export const Income = <i class="fa-solid fa-money-bill-wave"></i>;
+export const Expense = <i class="fa-solid fa-money-bill-transfer"></i>;
+export const SignOut = <i class="fa-solid fa-right-from-bracket"></i>;
+export const Rupees = <i class="fa-solid fa-indian-rupee-sign"></i>;
+export const calender = <i class="fa-solid fa-calendar-days"></i>;
+export const comment = <i class="fa-solid fa-comment"></i>;
+export const trash = <i class="fa-solid fa-trash fa-xl"></i>;
+export const Plus = <i class="fa-solid fa-plus"></i>;
+export const Minus = <i class="fa-solid fa-minus"></i>;

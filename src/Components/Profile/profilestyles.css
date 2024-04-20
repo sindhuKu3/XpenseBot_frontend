@@ -1,0 +1,16 @@
+.ProfileContainer{
+  height:1000px ;
+margin-bottom: 50px;
+}
+.Profile{
+  margin-top:80px ; 
+ 
+
+}
+.card-text{
+  font-weight:bolder ; 
+}
+.card-body img{
+  width:80px ; 
+  height:100px ;
+}

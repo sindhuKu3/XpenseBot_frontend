@@ -1,0 +1,21 @@
+.footer{
+    background-color: black;
+    padding-block: 10px ;
+   display:grid ;
+   grid-template-columns:  repeat(auto-fit ,minmax(400px ,1fr));
+   grid-gap:1em ;
+    padding-left: 50px;
+   
+    margin-top: -26px;
+}
+.footer-section{
+        padding-inline: 30px ;
+    }
+
+ .footer-section  p{
+    color: white;
+    padding-block: 0px;
+    opacity: 0.9;
+    margin-block: 0px;
+           }
+    

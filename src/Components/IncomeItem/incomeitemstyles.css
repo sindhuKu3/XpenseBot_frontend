@@ -1,0 +1,34 @@
+.IncomeItem{
+   width:600px;
+  height: 54px;
+  border: black solid 2px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding-top:8px ;
+}
+.IncomeItem button{
+background-color: #11119fcf;
+  width: 30px;
+  height: 28px;
+}
+
+.IncomeList .col{
+  margin-top: 50px;
+}
+.IncomeItem .nav{
+  padding-left: 12px;
+}
+.nav-item p{
+  color: rgb(9, 9, 29)!important;
+  font-weight:bolder ;
+  
+}
+.IncomeItem h5{
+    font-size:20px;
+  margin-top: 5px;
+  font-weight:bolder ;
+}
+.trash {
+   margin-top: -14px;
+}
+
