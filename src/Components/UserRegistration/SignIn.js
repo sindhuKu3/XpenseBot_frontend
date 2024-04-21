@@ -5,7 +5,7 @@ import "./userstyles.css";
 import Profile from "../Profile/Profile";
 import Footer from "../Footer/Footer";
 import NavBar from "../Navbar/Navbar";
- 
+
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,7 +17,7 @@ const SignIn = () => {
     e.preventDefault();
     const configuration = {
       method: "post",
-      url: "http://localhost:5000/api/users/signin",
+      url: "xpense-bot-backend.vercel.app/api/users/signin",
       data: {
         email,
         password,
@@ -26,7 +26,7 @@ const SignIn = () => {
     axios(configuration)
       .then((result) => {
         setLogin(true);
-        setErrorMessage("");   
+        setErrorMessage("");
       })
       .catch((error) => {
         setErrorMessage("Email or password is incorrect.");
@@ -35,7 +35,7 @@ const SignIn = () => {
 
   return (
     <div className="SignIn">
-      <NavBar isLogin={login}/>
+      <NavBar isLogin={login} />
       {login ? (
         <Profile />
       ) : (
@@ -99,7 +99,7 @@ const SignIn = () => {
           </button>
         </form>
       )}
-      <Footer/>
+      <Footer />
     </div>
   );
 };

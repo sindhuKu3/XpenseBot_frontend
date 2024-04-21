@@ -1,6 +1,6 @@
 import React,{useContext, useState}from "react"  ;
 import axios from 'axios' ; 
-const BASE_URL = "http://localhost:5000/api/" ; 
+const BASE_URL = "xpense-bot-backend.vercel.app/api/"; ; 
 const GlobalContext = React.createContext() ; 
 export const GlobalProvider =({children})=>{
   const [incomes, setIncomes] = useState([]);
