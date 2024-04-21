@@ -17,7 +17,7 @@ const SignIn = () => {
     e.preventDefault();
     const configuration = {
       method: "post",
-      url: "xpense-bot-backend.vercel.app/api/users/signin",
+      url: "http://xpense-bot-backend.vercel.app/api/users/signin",
       data: {
         email,
         password,
