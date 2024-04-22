@@ -12,7 +12,7 @@ export const GlobalProvider =({children})=>{
    const addIncome = async (income) => {
      const response = await axios
        .post(
-         "http://xpense-bot-backend.vercel.app/transaction/add-income",
+         "http://xpense-bot-backend.vercel.app/api/transaction/add-income",
          income
        )
 
@@ -24,7 +24,7 @@ export const GlobalProvider =({children})=>{
    //function for getting expenses
    const getIncomes = async () => {
      const response = await axios.get(
-       "http://xpense-bot-backend.vercel.app/transaction/get-incomes"
+       "http://xpense-bot-backend.vercel.app/api/transaction/get-incomes"
      );
      setIncomes(response.data);
      console.log(response.data);
@@ -33,7 +33,7 @@ export const GlobalProvider =({children})=>{
    //function for deleting income
    const deleteIncome = async (id) => {
      const res = await axios.delete(
-      `http://xpense-bot-backend.vercel.app/transaction/delete-income/${id}`
+      `http://xpense-bot-backend.vercel.app/api/transaction/delete-income/${id}`
      );
      getIncomes();
    };
@@ -49,7 +49,7 @@ export const GlobalProvider =({children})=>{
    const addExpense = async (expense) => {
      const response = await axios
        .post(
-         `http://xpense-bot-backend.vercel.app/transaction/add-expense`,
+         `http://xpense-bot-backend.vercel.app/api/transaction/add-expense`,
          expense
        )
 
@@ -61,7 +61,7 @@ export const GlobalProvider =({children})=>{
    //function for getting expenses
    const getExpenses = async () => {
      const response = await axios.get(
-       `http://xpense-bot-backend.vercel.app/transaction/get-expenses`
+       `http://xpense-bot-backend.vercel.app/api/transaction/get-expenses`
      );
      setExpenses(response.data);
      console.log(response.data);
@@ -70,7 +70,7 @@ export const GlobalProvider =({children})=>{
    //function for deleting expenses
    const deleteExpense = async (id) => {
      const res = await axios.delete(
-       `http://xpense-bot-backend.vercel.app/transaction/delete-expense/${id}`
+       `http://xpense-bot-backend.vercel.app/api/transaction/delete-expense/${id}`
      );
      getExpenses();
    };
