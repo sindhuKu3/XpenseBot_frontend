@@ -17,7 +17,7 @@ const handleSubmit=(e)=>{
     e.preventDefault();
     const configuration = {
       method: "post",
-      url: "http://xpense-bot-backend.vercel.app/api/users/signup",
+      url: "https://xpense-bot-backend.vercel.app/api/users/signup",
       data: {
         fullName,
         email,
