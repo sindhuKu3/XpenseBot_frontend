@@ -6,8 +6,8 @@ const NavBar = ({ isLogin }) => {
       <a href="/">XpenseBot</a>
       {isLogin && (
         <>
-          <a href="/profile">Profile</a>
-          <a href="/signup">Logout</a>
+         
+          <a href="/signin">Logout</a>
         </>
       )}
     </div>

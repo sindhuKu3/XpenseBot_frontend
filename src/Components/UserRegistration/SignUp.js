@@ -1,19 +1,19 @@
 import { useState } from "react";
-import './userstyles.css' ; 
-import {useNavigate }from "react-router-dom";
+import "./userstyles.css";
+import { useNavigate } from "react-router-dom";
 import Profile from "../Profile/Profile";
 import axios from "axios";
 import Footer from "../Footer/Footer";
 import NavBar from "../Navbar/Navbar";
 const SignUp = () => {
-  const [fullName,setFullName]=useState("") ; 
- const [email, setEmail] = useState("");
- const [password, setPassword] = useState("");
-const [signup,setSignUp]= useState(false) ;
-const[errorMessage,setErrorMessage]=useState(false);
-const navigate = useNavigate() ;
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [signup, setSignUp] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
+  const navigate = useNavigate();
 
-const handleSubmit=(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     const configuration = {
       method: "post",
@@ -24,24 +24,19 @@ const handleSubmit=(e)=>{
         password,
       },
     };
-    axios(configuration)
-      .then((result) => {
-        if(result.data === "fail"){
-          setErrorMessage(true) ; 
-       
-        }else{
+    axios(configuration).then((result) => {
+      if (result.data === "fail") {
+        setErrorMessage(true);
+      } else {
         setSignUp(true);
         setErrorMessage(false);
-        }
-       
       }
-    )
-     
-}  
-  
+    });
+  };
+
   return (
     <>
-    <NavBar/>
+      <NavBar />
       <div className="SignUp">
         {signup ? (
           <Profile />
@@ -129,5 +124,5 @@ const handleSubmit=(e)=>{
     </>
   );
 };
- 
+
 export default SignUp;

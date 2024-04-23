@@ -7,10 +7,6 @@ import ChartTable from "../ChartTable/ChartTable";
 import { useGlobalContext } from "../../Context/globalContext";
 import { Rupees } from "../../Utils/Icons";
 
-
-
-
-
 const Profile = () => {
   const {
     totalBalance
