@@ -7,7 +7,7 @@ const NavBar = ({ isLogin }) => {
       {isLogin && (
         <>
           <a href="/profile">Profile</a>
-          <a href="/logout">Logout</a>
+          <a href="/signup">Logout</a>
         </>
       )}
     </div>
